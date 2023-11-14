@@ -5,8 +5,14 @@ import Header from '../componants/Header'
 const Counter = () => {
   return (
     <>
-    <Header/>
+    <Header name={"Counter"}/>
       <Typography variant='h4'>Counter</Typography>
+
+      
+
+
+
+
     </>
   )
 }

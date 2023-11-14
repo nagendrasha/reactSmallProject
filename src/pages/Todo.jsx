@@ -33,7 +33,7 @@ const Todo = () => {
   // console.log(store)
   return (
     <>
-    <Header/>
+    <Header name={"Todo"} />
     <Grid container sx={{display:'flex', justifyContent:'center' , mt:'50px'}}>
         <Grid item sx={{width:'350px'}}>
         <Paper sx={{padding:'10px'}} elevation={3}>

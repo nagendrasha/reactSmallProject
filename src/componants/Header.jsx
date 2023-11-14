@@ -10,7 +10,7 @@ import {
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
 
   const navigate = useNavigate();
   
@@ -24,17 +24,19 @@ const Header = () => {
               color="inherit"
               edge="start"
               aria-label="menu"
+              onClick={()=>{navigate("/")}}
               sx={{ mr: 2 }}
             >
               <HomeIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}
               onClick={()=>{navigate("/")}}>
-              TextUtils
+              {props.name}
             </Typography>
             <Button color="inherit" onClick={()=>{navigate("/color")}} >Color Changer</Button>
             <Button color="inherit" onClick={()=>{navigate("/counter")}} >Counter</Button>
             <Button color="inherit" onClick={()=>{navigate("/todo")}} >Todo</Button>
+            <Button color="inherit" onClick={()=>{navigate("/notes")}} >Notes</Button>
           </Toolbar>
         </AppBar>
       </Box>

@@ -24,7 +24,7 @@ const handleOnChange = (event) =>{
 
   return (
     <>
-     <Header />
+     <Header name={"TextUtils"} />
     <Grid container sx={{display:'flex', justifyContent:'center' , mt:'50px'}}>
         <Grid item sx={{width:'600px',textAlign:'center'}}>
         <Paper sx={{padding:'10px'}} elevation={3}>

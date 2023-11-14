@@ -9,7 +9,7 @@ const [color,setColor] = useState('');
 
   return (
     <>
-        <Header/>
+        <Header name={"color"}/>
         <Grid container sx={{ display:'flex', justifyContent:'center', width:800,height:500,backgroundColor:color }}>
 
         </Grid>
